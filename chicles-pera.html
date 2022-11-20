@@ -1,52 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="./chicles-pera.js"></script>
-	
+	<link rel="stylesheet" href="style.css">
+	<title>Gastos de envío Chicles de Pera</title>
 </head>
-
 <body>
-	<div class="content">
-		<div class="delivery">
-			<p>
-				Introduce el código zip para calcular los gastos de envío
-			</p>
-			<label for="zip-code">
-				Código zip
-			</label>
-			<input id="zip-code" type="text" placeholder="555333" />
-			<button id="calculate-delivery">
-				Calcular gastos de envío
-			</button>
-		</div>
-		<div class="cart">
-			<div class="cart-row">
-				<div class="cart-row__info">
-					<img src="./assets/chicle.jpg" alt="chicle de pera" />
-					<strong class="cart-row__info__units">
-						x1000
-					</strong>
-					unidades
-				</div>
-				<strong>
-					5€
-				</strong>
-			</div>
-			<div class="cart-row">
-				<div class="cart-row__info">
-					Gastos de envío
-				</div>
-				<strong id="delivery-cost">
-					-
-				</strong>
-			</div>
-			<div class="cart-row total">
-				<div class="cart-row__info">
-					Total
-				</div>
-				<strong id="total-price">
-					-
-				</strong>
-			</div>
 
-		</div>
+<div class="contenedor">
+<div class="left">
+	<img src="./assets/chicle.jpg" alt="chicle de pera" width="320" class="bordeImg"/>
+</div>
+<div class="right">
+	<h3>
+		Introduce el código zip para calcular los gastos de envío
+	</h3>
+	<label for="zip-code">
+	</label>
+	<input id="zip-code" type="text" placeholder="11111" class="textspace"/>
+	<button id="calculate-delivery">
+		Calcular gastos de envío
+	</button>
+	
+	<div class="textspace">
+	<strong>
+		x1000
+	</strong>
+		unidades
+	<strong class="unidades">
+		5€
+	</strong>
 	</div>
+	<div class="textspace">
+			Gastos de envío
+
+		<strong id="delivery-cost" class="gastosdeenvio">
+			-
+		</strong>
+	</div>
+	<div class="textspace">
+		<strong>Total</strong>
+	
+		<strong id="total-price" class="total">
+			-
+		</strong>
+	</div>	
+</div>	
+</div>
 </body>
+</html>

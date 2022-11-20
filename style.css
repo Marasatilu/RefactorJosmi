@@ -1,63 +1,50 @@
-/* Mejorar css de Josmi */
-
-.content {
-    margin: 48px auto;
-    max-width: 1200px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr minmax(400px, 500px);
-    align-items: stretch;
+body {
+    background-color:rgb(225, 234, 184);
+}
+.bordeImg {
+    border-radius: 10%;
+}
+.left {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    margin-left: 150px;
+    float: left;
+    position: relative;
+    height: auto;
 }
 
-.cart {
-    padding: 12px 24px;
-    border-left: 1px solid #eee;
+.right {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    margin-right: 150px;
+    position: relative;
+    float: right;
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+div {
+    font-family: Arial;
 }
 
-.cart-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 24px;
+.contenedor {
+    margin-top: 150px;
 }
-
-.cart-row__info {
-    display: flex;
-    align-items: center;
-}
-
-.cart-row__info__units {
-    margin-right: 3px;
-}
-
-.cart-row strong {
-    font-size: 1.2em;
-}
-
-.cart-row img {
-    margin-right: 12px;
-    max-width: 120px;
-}
-
-.delivery {
-    padding: 12px;
-    margin-bottom: 12px;
-}
-
-.delivery label {
-    display: block;
-    margin-bottom: 3px;
-}
-
-.delivery input {
-    margin-right: 12px;
+.textspace {
+    margin-top: 20px;
 }
 
 .total {
-    padding-top: 12px;
-    border-top: 1px solid #222;
+    margin-left: 100px;
 }
 
-.total strong {
-    font-size: 1.5em;
+.gastosdeenvio {
+    margin-left: 20px;
+}
+
+.unidades {
+    margin-left: 23px;
 }

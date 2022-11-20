@@ -1,9 +1,9 @@
 function showDeliveryCost(deliveryCost){
-	document.getElementById('delivery-cost').innerText = deliveryCost;
+	document.getElementById('delivery-cost').innerText = `${deliveryCost}€`;
 }
 
 function showTotal(totalPrice){
-	document.getElementById('total-price').innerText = totalPrice;
+	document.getElementById('total-price').innerText = `${totalPrice}€`;
 }
 
 function showBadZipFormat() {
@@ -16,15 +16,11 @@ window.addEventListener('load', () => {
 
 	calculateDeliveryButton.addEventListener('click', () => {
 		const zipCode = document.getElementById('zip-code').value;
-		console.log(zipCode);
-
-		function versionWithNumbers () {
-			const zipCode = document.getElementById('zip-code').value;
-			let deliveryCost;
-				// si el número de caracteres de zipCode es distinto de 5
-				if (zipCode.length !== 5 || zipCode.startsWith('0') || isNaN(zipCode)) {
-					showBadZipFormat();
-					return;
+		let deliveryCost;
+			// si el número de caracteres de zipCode es distinto de 5
+			if (zipCode.length !== 5 || zipCode.startsWith('0') || isNaN(zipCode)) {
+				showBadZipFormat();
+				return;
 				}
 		
 				const firstZipCodeChar = Number(zipCode.charAt(0));
@@ -43,7 +39,6 @@ window.addEventListener('load', () => {
 		
 				showDeliveryCost(deliveryCost);
 				showTotal(priceWithoutDeliveryCost + deliveryCost);
-		}	
 
 
 	})
